@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+#paragraph {
+    color: blue;
+}
+
+p {
+    /* color: red !important; */
+    border: 2px solid currentColor;
+}
+
+p strong {
+    font-weight: initial;
+}
+
+
+div.parent {
+    font-size: 20px;
+}
+p.child {
+    border: unset;
+    font-size: 1.2em;
+}
+
+div.buttons-container {
+    /* border: 2px solid rgb(121, 121, 199);*/
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    /* grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));  */
+    /* display: flex;
+    justify-content: space-between;
+    width: auto; */
+}
+
+div.buttons-container > * {
+    background-color: rgb(212, 174, 223);
+    color: rgb(57, 57, 165);
+    width: auto;
+    height: 2em;
+
+}
+
+.dragDiv {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(59, 139, 219);
+    border-radius: 50%;
+    position: absolute;
+}

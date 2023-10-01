@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Just testing</h1>
-    <p>Added paragraph</p>
+<body onload = "move('dragDiv')">
+    
+    <h1 style="background-color: darkmagenta;">Just testing</h1>
+    <p id="paragraph">Added <strong>I am strong </strong>paragraph</p>
+    <div class="parent">This is the parent
+        <p class="child">This is the child</p>
+    </div>
+
+    <div class="dragDiv" id="dragDiv"></div>
+
+    <style>
+        h1 {
+            background-color: aqua !important;
+        }
+    </style>
 </body>
 <script src="script.js"></script>
+<script type="module" src ="testImport.mjs"></script>
+
 </html>
